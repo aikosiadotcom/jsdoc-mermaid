@@ -16,7 +16,7 @@ const MERMAID_VERSION = '10.1.0'
  * @constant {string} MERMAID_HTML_SCRIPT
  * @description Html tag that include mermaid library
  */
-const MERMAID_HTML_SCRIPT = `<script src="https://unpkg.com/mermaid@${MERMAID_VERSION}/dist/mermaid.esm.min.mjs"></script>`
+const MERMAID_HTML_SCRIPT = `<script type="module" src="https://unpkg.com/mermaid@${MERMAID_VERSION}/dist/mermaid.esm.min.mjs"></script>`
 
 /**
  * @constant {Object} ESCAPE_HTML_MAPPING
