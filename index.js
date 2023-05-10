@@ -52,14 +52,13 @@ exports.handlers = {
       ].join(''))
 
       if (htmls) {
-        e.doclet.description = e.doclet.description || ''
-
+        
+        e.doclet.classdesc = e.doclet.classdesc || ''
         if (!isAddedMermaid[e.doclet.memberof]) {
-          e.doclet.description += MERMAID_HTML_SCRIPT
+          e.doclet.classdesc += MERMAID_HTML_SCRIPT
           isAddedMermaid[e.doclet.memberof] = true
         }
-
-        e.doclet.description += htmls.join('')
+        e.doclet.classdesc += htmls.join('')
       }
     }
   }
